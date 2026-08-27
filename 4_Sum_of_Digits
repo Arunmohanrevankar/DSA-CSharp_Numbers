@@ -1,0 +1,19 @@
+using System;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int data = 3303; // 3+3+0+3 = 9
+        int orginal = data;
+        int Sum = 0;
+
+        while (data > 0)
+        {
+            orginal = data % 10;
+            Sum = Sum + orginal;
+            data = data /10;
+        }
+
+        Console.WriteLine("Count of digits: " + Sum);
+    }
+}
