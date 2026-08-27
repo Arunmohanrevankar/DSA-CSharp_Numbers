@@ -1,74 +1,31 @@
-
 Reverse a Number
+using System;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int Data = 1234;
+        int Sum = 0;
+        while(Data > 0)
+        {
+            int Test = Data % 10 ; 
+            Sum = Test + (Sum*10);
+            Data = Data/10;
+        }
+        Console.WriteLine("revers :"+ Sum);
 
-Input: 1234
-Output: 4321
-Check Palindrome Number
+    }
+}
 
-Input: 121
-Output: Palindrome
-Count Digits
 
-Input: 12345
-Output: 5
-Sum of Digits
 
-Input: 1234
-Output: 10
-Product of Digits
 
-Input: 123
-Output: 6
-Find First and Last Digit
 
-Input: 12345
-Output: First = 1, Last = 5
-Swap First and Last Digit
 
-Input: 12345
-Output: 52341
-Intermediate
-Check Even or Odd
 
-Input: 17
-Output: Odd
-Check Positive, Negative or Zero
 
-Input: -10
-Output: Negative
-Find Largest Digit
 
-Input: 58329
-Output: 9
-Find Smallest Digit
 
-Input: 58329
-Output: 2
-Count Even and Odd Digits
 
-Input: 123456
-Output: Even = 3, Odd = 3
-Find Sum of Even Digits
 
-Input: 123456
-Output: 12
-Find Sum of Odd Digits
 
-Input: 123456
-Output: 9
-Check Prime Number
-
-Input: 17
-Output: Prime
-Print Prime Numbers from 1 to N
-
-Input: 20
-Output: 2 3 5 7 11 13 17 19
-Find Factorial
-
-Input: 5
-Output: 120
-Print Fibonacci Series
-
-Input: 7
-Output: 0 1 1 2 3 5 8
