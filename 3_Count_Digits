@@ -1,0 +1,17 @@
+using System;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int data = 33033;
+        int count = 0;
+
+        while (data > 0)
+        {
+            data = data / 10;
+            count++;
+        }
+
+        Console.WriteLine("Count of digits: " + count);
+    }
+}
